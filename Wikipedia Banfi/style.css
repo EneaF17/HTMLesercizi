@@ -1,0 +1,129 @@
+a{text-decoration: none;}
+html{padding: 0;}
+body{margin: 0;
+background-color: #eeeeee;
+}
+header{
+    background-color: #eeeeee;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+}
+
+header a{margin-left: 10px; margin-right: 5px;}
+
+.toolbar{
+    /* border: solid 1px red; */
+    background-color: #eeeeee;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -10vh;
+}
+
+.toolbar p{
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: solid 2px gray;
+}
+
+.toolbar img{
+    width: 50%;
+    margin: auto;
+    height: auto;
+    justify-self: center;
+}
+
+.toolbar li{list-style-type: none;}
+
+.boxMain{
+    /* display: flex; */
+    background-color: white;
+    border-left: solid 1px cyan;
+    border-top: solid 1px cyan;
+    border-bottom: solid 1px cyan;
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+}
+
+
+.boxContenuti{
+    /* border: solid 1px red; */
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: 5%;
+    padding: 5px;
+}
+
+.boxContenuti h1,h2{
+    font-weight: normal;
+    border-bottom: solid 2px black;
+    clear: left;
+}
+
+.boxTabellaLato{
+    background-color: #eeeeee;
+    display: flex;
+    border: solid 1px black;
+    float: right;
+    width: 30%;
+    flex-direction: column;
+}
+
+.boxTabellaLato img{
+    padding: 5px;
+    width: 75%;
+    align-self: center;
+}
+.boxTabellaLato h3,h4{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.boxIndice{
+    background-color: #eeeeee;
+    display: flex;
+    border: solid 1px black;
+    float: left;
+    width: auto;
+    flex-direction: column;
+}
+.boxIndice h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+th{
+    border: solid 1px gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+td{
+    border: solid 1px gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table p{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #eeeeee;
+    margin-left: 20%;
+    width: 80%;
+}
