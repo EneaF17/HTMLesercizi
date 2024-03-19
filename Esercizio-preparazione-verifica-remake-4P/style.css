@@ -1,0 +1,74 @@
+* {box-sizing: border-box;}
+
+body {background-color: black;}
+
+h1 {text-align: center;}
+
+.contenitore-pagina {max-width: 1200px; margin: auto; background-color: lightgray;}
+
+header {
+    height: 50px; 
+    background-color: rgb(150,150,150); 
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {height: 100%; padding: 5px;}
+.logo img {height: 100%;}
+
+nav, .tenda, .tenda__li, .tenda__dropdown {z-index: 5; background-color: rgb(150,150,150);}
+nav {display: flex;}
+nav a {text-decoration: none; color: black;}
+.tenda {background-color: rgb(150,150,150);}
+.tenda__li {padding: 15px; height: 50px; max-height: 50px;}
+.tenda__dropdown {max-height: 0px; overflow: hidden; transition: 0.5s; transition-timing-function: ease-in;}
+.tenda:hover .tenda__dropdown {max-height: 150px;}
+.tenda__li:hover {background-color: lightgray;}
+
+.contenitore-centrale {z-index: 1; display: flex;}
+
+.sidenav {width: 20%; background-color: rgb(181, 181, 181); padding: 5px;}
+.sidenav h2 {text-align: center;}
+.sidenav ul {list-style-type: none; padding: 0;}
+.sidenav a {text-decoration: none; color: black;}
+.sidenav li {padding: 5px 10px;}
+.sidenav ul li:hover {background-color: gray;}
+
+
+
+main {padding: 15px; width: 80%;}
+.titolone {font-size: 100px; text-align: center;}
+
+.grid {display: flex; flex-wrap: wrap; width: 100%;}
+.card {width: 32%; margin: 0.666%; border: 1px solid gray; border-radius: 5px; padding: 5px;}
+.card img {width: 100%;}
+
+
+footer {padding: 15px; background-color: rgb(150,150,150);}
+footer p {margin: 0; padding: 0; text-align: center;}
+
+.mytab {margin: auto; width: 600px; border-collapse: collapse;}
+.mytab th, .mytab td {border: 1px solid black; padding: 5px;}
+.mytab th {background-color: rgb(160, 160, 160);}
+
+.w-100 {width: 100%;}
+.w-300p {width: 300px;}
+.fl {float: left; margin-right: 10px;}
+.fr {float: right; margin-left: 10px;}
+.clear {clear: both;}
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .card {width: 47%;}
+}
+@media (max-width: 768px) {
+    .sidenav {display: none;}
+    main {width: 100%;}
+}
+@media (max-width: 700px) {
+    .card {width: 98%;}
+}
